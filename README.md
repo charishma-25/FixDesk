@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FixDesk
 
 FixDesk is an IT support portal for finding troubleshooting guidance and submitting support requests. It has a React/Vite frontend, a Node.js HTTP API, and MongoDB storage.
@@ -246,3 +247,6 @@ Use the same email and password used during registration. Email is case-insensit
 npm run build
 npm run lint
 ```
+=======
+.
+>>>>>>> 50a02ef35333ad856631930d1e8e136f0edc9f83
