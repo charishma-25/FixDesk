@@ -26,7 +26,7 @@ FixDesk is an IT support portal for finding troubleshooting guidance and submitt
 - Article details with step-by-step troubleshooting instructions.
 - Ticket creation with title, description, category, and priority validation.
 - Ticket lists scoped to the signed-in user and saved persistently in MongoDB.
-- Responsive Overview, Knowledge Base, ticket, Messages, Team Dashboard, Reports, and Settings screens.
+- Responsive Overview, Knowledge Base, ticket updates, Team Dashboard, Reports, and Settings screens.
 - A health endpoint for checking API and database connectivity.
 
 ## Technology
@@ -219,7 +219,7 @@ README.md           Project setup and API documentation
 
 ## Current scope
 
-Accounts, sessions, Knowledge Base reads and agent publishing, employee ticket create/list, and agent ticket list/status updates use the backend. Messages, team-wide metrics, reports, password reset, email verification, comments, attachments, and ticket status history are not yet backed by server APIs.
+Accounts, sessions, Knowledge Base reads and agent publishing, employee ticket create/list, and agent ticket list/status updates use the backend. The Ticket updates page is generated from real ticket status and resolution data; direct user-to-agent messaging, team-wide metrics, reports, password reset, email verification, comments, attachments, and ticket status history are not yet backed by server APIs.
 
 The backend currently binds to loopback by default. Change `API_HOST` and configure network access deliberately when deploying outside a local machine.
 
