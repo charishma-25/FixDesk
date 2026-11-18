@@ -1,0 +1,17 @@
+{
+  "name": "fixdesk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node backend/dev.js",
+    "start": "node --env-file-if-exists=.env backend/server.js",
+    "create-agent": "node --env-file-if-exists=.env backend/create-agent.js",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "preview": "npm --prefix frontend run preview",
+    "install:frontend": "npm --prefix frontend install"
+  },
+  "dependencies": {
+    "mongodb": "^7.9.0"
+  }
+}

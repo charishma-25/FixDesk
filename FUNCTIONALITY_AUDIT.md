@@ -52,6 +52,15 @@ Scope: existing Vite/React frontend in `frontend/`
 - Added record detail modals for ticket and article destinations.
 - Fixed the created-ticket toast action to pass the newly created record directly, avoiding a stale React state lookup.
 
+## Backend implementation update - 2026-11-18
+
+- Added a Node.js HTTP API connected to MongoDB using the official MongoDB Node.js driver.
+- Added account registration, password verification with scrypt hashes, expiring server-side sessions, and authenticated session cookies.
+- Connected ticket creation and per-user ticket lists to MongoDB.
+- Seeded the Knowledge Base into MongoDB on first startup and served articles through the API.
+- Added Vite API proxying and a combined development command (`npm run dev`).
+- Verified production build and lint. Runtime check returned HTTP 200 for the Vite frontend and `/api/health` reported MongoDB connected.
+
 ## Remaining scope
 
-The current repository is a frontend-only local demonstration. Authentication, Flask APIs, persistence, database-backed dashboards, and backend terminal verification cannot be tested until a backend is added to the workspace.
+The backend currently supports local account and ticket workflows. Password reset, email verification, role-based agent access, real messaging, and database-backed operational reports remain future work. Production deployment should use an authenticated MongoDB account, HTTPS, and deployment-specific environment variables.

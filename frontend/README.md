@@ -4,7 +4,17 @@ FixDesk is a responsive IT support portal interface for **“Find Solutions. Fix
 
 ## Run locally
 
+From the repository root:
+
 ```bash
+npm run install:frontend
+npm run dev
+```
+
+You can also run the commands directly from `frontend/`:
+
+```bash
+cd frontend
 npm install
 npm run dev
 ```
